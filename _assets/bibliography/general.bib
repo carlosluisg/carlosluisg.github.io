@@ -1,0 +1,54 @@
+@article{luis-ral20,
+title = {Online Trajectory Generation with Distributed Model Predictive Control for Multi-Robot Motion Planning},
+author = {Carlos E. Luis and Marijan Vukosavljev and Angela P. Schoellig},
+journal = {IEEE Robotics and Automation Letters},
+year = {2020},
+volume = {5},
+number = {2},
+pages = {604--611},
+doi = {10.1109/LRA.2020.2964159},
+urlvideo = {https://www.youtube.com/watch?v=N4rWiraIU2k},
+urllink = {https://arxiv.org/pdf/1909.05150.pdf},
+abstract = {We present a distributed model predictive control (DMPC) algorithm to generate trajectories in real-time for multiple robots. We adopted the on-demand collision avoidance method presented in previous work to efficiently compute non-colliding trajectories in transition tasks. An event-triggered replanning strategy is proposed to account for disturbances. Our simulation results show that the proposed collision avoidance method can reduce, on average, around 50\% of the travel time required to complete a multi-agent point-to-point transition when compared to the well-studied Buffered Voronoi Cells (BVC) approach. Additionally, it shows a higher success rate in transition tasks with a high density of agents, with more than 90\% success rate with 30 palm-sized quadrotor agents in a 18 m^3 arena. The approach was experimentally validated with a swarm of up to 20 drones flying in close proximity.}
+}
+
+@article{luis-ral19,
+title = {Trajectory Generation for Multiagent Point-To-Point Transitions via Distributed Model Predictive Control},
+author = {Carlos E. Luis and Angela P. Schoellig},
+journal = {IEEE Robotics and Automation Letters},
+year = {2019},
+volume = {4},
+number = {2},
+pages = {357--382},
+urllink = {https://arxiv.org/abs/1809.04230},
+urlvideo = {https://youtu.be/ZN2e7h-kkpw},
+abstract = {This paper introduces a novel algorithm for multiagent offline trajectory generation based on distributed model predictive control (DMPC). By predicting future states and sharing this information with their neighbours, the agents are able to detect and avoid collisions while moving towards their goals. The proposed algorithm computes transition trajectories for dozens of vehicles in a few seconds. It reduces the computation time by more than 85\% compared to previous optimization approaches based on sequential convex programming (SCP), with only causing a small impact on the optimality of the plans. We replaced the previous compatibility constraints in DMPC, which limit the motion of the agents in order to avoid collisions, by relaxing the collision constraints and enforcing them only when required. The approach was validated both through extensive simulations for a wide range of randomly generated transitions and with teams of up to 25 quadrotors flying in confined indoor spaces.}
+}
+
+@INPROCEEDINGS{du-icra19,
+author = {Xintong Du and Carlos E. Luis and Marijan Vukosavljev and Angela P. Schoellig},
+title = {Fast and in sync: periodic swarm patterns for quadrotors},
+booktitle = {{Proc. of the IEEE International Conference on Robotics and Automation (ICRA)}},
+year = {2019},
+pages={9143--9149},
+urllink = {https://arxiv.org/abs/1810.03572},
+urlvideo = {https://drive.google.com/file/d/1D9CTpYSjdFHNjiYsFWeOI3--Ve1-3Bfp/view},
+abstract = {This paper aims to design quadrotor swarm performances, where the swarm acts as an integrated, coordinated unit embodying moving and deforming objects. We divide the task of creating a choreography into three basic steps: designing swarm motion primitives, transitioning between those movements, and synchronizing the motion of the drones. The result is a flexible framework for designing choreographies comprised of a wide variety of motions. The motion primitives can be intuitively designed using few parameters, providing a rich library for choreography design. Moreover, we combine and adapt existing goal assignment and trajectory generation algorithms to maximize the smoothness of the transitions between motion primitives. Finally, we propose a correction algorithm to compensate for motion delays and synchronize the motion of the drones to a desired periodic motion pattern. The proposed methodology was validated experimentally by generating and executing choreographies on a swarm of 25 quadrotors.},
+}
+
+@MISC{luis-icra19,
+author = {Carlos E. Luis and Marijan Vukosavljev and Angela P. Schoellig},
+title = {Towards Scalable Online Trajectory Generation for Multi-robot Systems},
+year = {2019},
+howpublished = {Abstract and Poster, in Proc. of the Resilient Robot Teams Workshop at the IEEE International Conference on Robotics and Automation (ICRA)},
+abstract = {We present a distributed model predictive control (DMPC) algorithm to generate trajectories in real-time for multiple robots, taking into account their trajectory tracking dynamics and actuation limits. An event-triggered replanning strategy is proposed to account for disturbances in the system. We adopted the on-demand collision avoidance method presented in previous work to efficiently compute non-colliding trajectories in transition tasks. Preliminary results in simulation show a higher success rate than previous online methods based on Buffered Voronoi Cells (BVC), while maintaining computational tractability for real-time operation.},
+}
+
+@MISC{luis-polytechnique16,
+author = {Carlos E. Luis and Jerome Le Ny},
+title = {Design of a trajectory tracking controller for a nanoquadcopter},
+year = {2016},
+howpublished = {Technical Report, Ecole Polytechnique de Montreal},
+abstract = {The primary purpose of this study is to investigate the system modeling of a nanoquadcopter as well as designing position and trajectory control algorithms, with the ultimate goal of testing the system both in simulation and on a real platform.
+            The open source nanoquadcopter platform named Crazyflie 2.0 was chosen for the project. The first phase consisted in the development of a mathematical model that describes the dynamics of the quadcopter. Secondly, a simulation environment was created to design two different control architectures: cascaded PID position tracker and LQT trajectory tracker. Finally, the implementation phase consisted in testing the controllers on the chosen platform and comparing their performance in trajectory tracking.},
+}

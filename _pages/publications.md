@@ -5,16 +5,11 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% include base_path %}
+<h1>2020</h1>
+{% bibliography --query @*[year=2020] %}
 
-{% if page.author and site.data.authors[page.author] %}
-  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
-{% endif %}
+<h1>2019</h1>
+{% bibliography --query @*[year=2019] %}
 
-{% if author.googlescholar %}
-  You can find a list of all my articles on [my Google Scholar profile]( {{ author.googlescholar }}) 
-{% endif %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<h1>2016</h1>
+{% bibliography --query @*[year=2016] %}

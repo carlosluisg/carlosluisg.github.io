@@ -49,6 +49,34 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
+scholar:
+  style: _assets/bibliography/bibstyle.csl
+  locale: en
+
+  sort_by: none
+  order: ascending
+
+  group_by: none
+  group_order: ascending
+
+  source: _assets/bibliography
+  bibliography: general.bib
+  bibliography_template: bibtemplate
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: false
+  bibtex_filters:
+    - superscript
+    - latex
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+
 # SEO Related
 google_site_verification :
 bing_site_verification   :

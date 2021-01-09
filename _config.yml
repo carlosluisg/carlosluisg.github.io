@@ -60,7 +60,7 @@ scholar:
   group_order: ascending
 
   source: _assets/bibliography
-  bibliography: general.bib
+  bibliography: references.bib
   bibliography_template: bibtemplate
 
   replace_strings: true
@@ -110,7 +110,7 @@ analytics:
 author:
   name             : "Carlos E. Luis"
   avatar           : "head-picture.jpg"
-  bio              : "Robotics 🤖& AI 🧠"
+  bio              : "Robotics 🤖, AI 🧠 & more"
   location         : "Paris, France"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"

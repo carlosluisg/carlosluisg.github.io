@@ -5,24 +5,43 @@
 
 <br>
 <!-- Add clickable toggles for bonus material -->
-<div id="{{key}}-materials">
-    <ul class="nav nav-pills">
-        {% if entry.abstract %}
-        <li>
-            <a href="javascript:toggleElement('#{{key}}-abstract')">Abstract</a>
-        </li>
-        {% endif %}
+<div class="materials">
+  <ul>
 
+    <li>
         <a href="javascript:toggleElement('.{{key}}-bibtex')">BibTex</a>
-    </ul>
+    </li>
+
+    {% if entry.abstract %}
+    <li>
+      <a href="javascript:toggleElement('#{{key}}-abstract')">Abstract</a>
+    </li>
+    {% endif %}
+
+    {% if entry.urllink %}
+      <li>
+        <a href="{{ entry.urllink }}" target="_blank">Download</a>
+      </li>
+    {% endif %}
+
+    {% if entry.urlvideo %}
+      <li>
+        <a href="{{ entry.urlvideo }}" target="_blank">Video</a>
+      </li>
+    {% endif %}
+  </ul>
 </div>
 
 <!-- Add bonus material -->
-<div id="reference-materials">
-    {% if entry.abstract %}
-    <p id="{{key}}-abstract" style="display:none;">{{entry.abstract}}</p>
-    {% endif %}
-    <pre class="{{key}}-bibtex" style="display:none; white-space: pre-line;">
+<div class="reference-materials">
+  {% if entry.abstract %}
+    <p id="{{key}}-abstract" style="display:none;">
+        {{entry.abstract}}
+    </p>
+  {% endif %}
+
+  <pre class="{{key}}-bibtex" style="display:none; white-space: pre-line;">
     {{entry.bibtex}}
   </pre>
+
 </div>

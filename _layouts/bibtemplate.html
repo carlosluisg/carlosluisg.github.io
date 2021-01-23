@@ -11,11 +11,11 @@ Reference commit: https://github.com/befelix/webpage/commit/c81b110a2880d11bd496
   {% endif %}
   <br>
 
-  {{ if entry.comment }}
+  {% if entry.comment %}
   <div class="comment">
     <ul><li><b>{{ entry.comment }}</b></li></ul>
   </div>
-  {{ endif }}
+  {% endif %}
 
   <!-- Add clickable toggles for bonus material -->
   <div class="links">
@@ -68,9 +68,7 @@ Reference commit: https://github.com/befelix/webpage/commit/c81b110a2880d11bd496
     {% endif %}
 
     {% if entry.bibtex %}
-      <pre class="bibtex">
-{{      entry.bibtex}}
-      </pre>
+      <pre class="bibtex">{{      entry.bibtex}}</pre>
     {% endif %}
   </div>
 </div>

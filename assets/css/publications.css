@@ -17,6 +17,7 @@ li {
 }
 
 .links li {
+    cursor: pointer;
     margin-right: 1em;
 }
 
@@ -25,20 +26,27 @@ li {
     color: #0066ff;
 }
 
+.reference {
+    padding-bottom: 30px;
+}
+
 /* Abstract */
 .materials p {
+    max-width: 85%;
     background-color: #f2f2f2;
     display: none;
     padding: 1em;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* Bibtex */
 .materials pre {
+    max-width: 85%;
     background-color: #f2f2f2;
     display: none;
-    overflow-x: scroll;
     padding: 1em;
-    padding-bottom: 0;
+    font-size: small;
 }
 
 /* Only show close button on phone */

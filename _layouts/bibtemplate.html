@@ -60,11 +60,13 @@ Reference commit: https://github.com/befelix/webpage/commit/c81b110a2880d11bd496
   <div class="materials">
 
     {% if entry.abstract %}
-    <p class="abstract toggle" content="abstract">
+   <!-- Has to be a div to avoid jumpy problem using JQuery's slideToggle function
+    See: https://stackoverflow.com/questions/1335461/jquery-slide-is-jumpy/8596292#8596292 -->
+    <div class="abstract toggle" content="abstract">
       {{entry.abstract}}
       <br>
       <a class="mobile-only mobile-close">Close</a>
-    </p>
+    </div>
     {% endif %}
 
     {% if entry.bibtex %}

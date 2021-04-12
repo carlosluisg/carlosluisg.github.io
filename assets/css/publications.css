@@ -1,0 +1,64 @@
+
+/* Credits to @befelix for the script to manage publications page
+Reference commit: https://github.com/befelix/webpage/commit/c81b110a2880d11bd496c4907df750742286d595 */
+
+/* Publications*/
+
+li {
+    display: inline;
+}
+
+.comment ul {
+    margin: 0;
+}
+
+.comment li {
+    color: gray;
+}
+
+.links li {
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.links li.active a{
+    background-color: #99ccff;
+    color: #0066ff;
+}
+
+.reference {
+    padding-bottom: 30px;
+}
+
+/* Abstract */
+.materials div {
+    max-width: 85%;
+    background-color: #f2f2f2;
+    display: none;
+    padding: 1em;
+    margin-top: 13px; /* emulate <p> environment */
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: medium;
+}
+
+/* Bibtex */
+.materials pre {
+    max-width: 85%;
+    background-color: #f2f2f2;
+    display: none;
+    padding: 1em;
+    font-size: small;
+}
+
+/* Only show close button on phone */
+@media screen and (min-width: 700px) {
+  .mobile-only { display: none; }
+}
+
+/*Don't indent bib on phone */
+@media screen and (max-width: 700px) {
+  ol.bibliography {
+    padding-left: 0;
+   }
+}

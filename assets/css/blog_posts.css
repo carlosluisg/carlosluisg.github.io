@@ -1,0 +1,15 @@
+figure {
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure img {
+    text-align: center;
+}
+figure figcaption {
+    text-align: center;
+    font-style: italic;
+}
